@@ -10,9 +10,9 @@ export default function Secondform() {
     const [lastname, setlastname] = useState('')
     const [myaddress, setaddress] = useState('')
     const savenext = () => {
-        dispatch({typr: 'STOREDATA', payload: {
-            emailid: emailid,
-            password: password }});
+        // dispatch({typr: 'STOREDATA', payload: {
+        //     emailid: emailid,
+        //     password: password }});
         navigate('./third');
     }
 

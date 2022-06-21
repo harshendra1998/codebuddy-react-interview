@@ -6,14 +6,14 @@ import { useDispatch } from 'react-redux';
 
 export default function Firstform() {
     const navigate = useNavigate();
-    const dispatch = useDispatch();
+    //const dispatch = useDispatch();
     const [emailid, setemailid] = useState('')
     const [password, setPassword] = useState('')
 
     const savenext = () => {
-        dispatch({typr: 'STOREDATA', payload: {
-            emailid: emailid,
-            password: password }});
+        // dispatch({typr: 'STOREDATA', payload: {
+        //     emailid: emailid,
+        //     password: password }});
         navigate('./second');
     }
 

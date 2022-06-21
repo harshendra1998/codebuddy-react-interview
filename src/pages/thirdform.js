@@ -10,10 +10,10 @@ export default function Thirdform() {
     const [phone, setphone] = useState('')
     const [address, setaddress] = useState('')
     const savenext = () => {
-        dispatch({typr: 'STOREDATA', payload: {
-            firstname: firstname,
-            lastname: lastname ,
-            address: address}});
+        // dispatch({typr: 'STOREDATA', payload: {
+        //     firstname: firstname,
+        //     lastname: lastname ,
+        //     address: address}});
     }
 
     const onsubmit=()=> fetch('https://codebuddy.review/submit', {method:'POST', body: data})
